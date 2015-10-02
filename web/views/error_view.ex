@@ -1,6 +1,10 @@
 defmodule Support.ErrorView do
   use Support.Web, :view
 
+  def render("403.html", _assigns) do
+    "Go away!!!"
+  end
+
   def render("404.html", _assigns) do
     "Page not found"
   end
